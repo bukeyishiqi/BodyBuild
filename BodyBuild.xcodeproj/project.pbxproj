@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65A1380921932A6F00968D70 /* MePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A1380321932A6F00968D70 /* MePresenter.swift */; };
+		65A1380A21932A6F00968D70 /* MeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A1380421932A6F00968D70 /* MeRouter.swift */; };
+		65A1380B21932A6F00968D70 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A1380521932A6F00968D70 /* MeViewController.swift */; };
+		65A1380C21932A6F00968D70 /* MeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A1380621932A6F00968D70 /* MeProtocols.swift */; };
+		65A1380D21932A6F00968D70 /* MeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A1380721932A6F00968D70 /* MeInteractor.swift */; };
 		8C0EFCBB218C4137001B470F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0EFCBA218C4137001B470F /* AppDelegate.swift */; };
 		8C0EFCBD218C4137001B470F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0EFCBC218C4137001B470F /* ViewController.swift */; };
 		8C0EFCC0218C4137001B470F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C0EFCBE218C4137001B470F /* Main.storyboard */; };
@@ -48,6 +53,11 @@
 
 /* Begin PBXFileReference section */
 		313B88B1ECB6A5EF5DB94DCA /* Pods-BodyBuild.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BodyBuild.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BodyBuild/Pods-BodyBuild.debug.xcconfig"; sourceTree = "<group>"; };
+		65A1380321932A6F00968D70 /* MePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MePresenter.swift; sourceTree = "<group>"; };
+		65A1380421932A6F00968D70 /* MeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeRouter.swift; sourceTree = "<group>"; };
+		65A1380521932A6F00968D70 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		65A1380621932A6F00968D70 /* MeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeProtocols.swift; sourceTree = "<group>"; };
+		65A1380721932A6F00968D70 /* MeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeInteractor.swift; sourceTree = "<group>"; };
 		66E33F9AF3BC90A948B14AFB /* Pods-BodyBuild.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BodyBuild.release.xcconfig"; path = "Pods/Target Support Files/Pods-BodyBuild/Pods-BodyBuild.release.xcconfig"; sourceTree = "<group>"; };
 		8C0EFCB7218C4137001B470F /* BodyBuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BodyBuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0EFCBA218C4137001B470F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,11 +120,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		65A1380221932A5E00968D70 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				65A1380321932A6F00968D70 /* MePresenter.swift */,
+				65A1380421932A6F00968D70 /* MeRouter.swift */,
+				65A1380521932A6F00968D70 /* MeViewController.swift */,
+				65A1380621932A6F00968D70 /* MeProtocols.swift */,
+				65A1380721932A6F00968D70 /* MeInteractor.swift */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
 		8C0EFCAE218C4137001B470F = {
 			isa = PBXGroup;
 			children = (
 				8C0EFCB9218C4137001B470F /* BodyBuild */,
 				8C0EFCB8218C4137001B470F /* Products */,
+				8CEE66302192DAF900E94945 /* Vendor */,
 				8E4B9EE1D010018E1923704C /* Pods */,
 				054071A35DB768D3D9B04B17 /* Frameworks */,
 			);
@@ -135,7 +158,6 @@
 				8C0EFCD1218C4E2C001B470F /* Services */,
 				8CFAAAB1219027A5001B7AFD /* Modules */,
 				8CEE663A2192DAF900E94945 /* Utility */,
-				8CEE66302192DAF900E94945 /* Vendor */,
 				8C0EFCBA218C4137001B470F /* AppDelegate.swift */,
 				8C0EFCBC218C4137001B470F /* ViewController.swift */,
 				8C0EFCBE218C4137001B470F /* Main.storyboard */,
@@ -285,8 +307,9 @@
 		8CFAAAB1219027A5001B7AFD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				65A1380221932A5E00968D70 /* Me */,
 				8CEE661E2192D49800E94945 /* Chat */,
-				8CFAAABD219027C3001B7AFD /* Main */,
+				8CFAAABD219027C3001B7AFD /* MainTabBar */,
 				8CFAAAB2219027A5001B7AFD /* Login */,
 			);
 			path = Modules;
@@ -304,7 +327,7 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		8CFAAABD219027C3001B7AFD /* Main */ = {
+		8CFAAABD219027C3001B7AFD /* MainTabBar */ = {
 			isa = PBXGroup;
 			children = (
 				8CFAAAC221904AA3001B7AFD /* MainViewController.swift */,
@@ -313,7 +336,7 @@
 				8CFAAAC121904AA3001B7AFD /* MainRouter.swift */,
 				8CFAAAC321904AA3001B7AFD /* MainProtocols.swift */,
 			);
-			path = Main;
+			path = MainTabBar;
 			sourceTree = "<group>";
 		};
 		8E4B9EE1D010018E1923704C /* Pods */ = {
@@ -472,7 +495,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A1380921932A6F00968D70 /* MePresenter.swift in Sources */,
 				8CEE663D2192DAF900E94945 /* TableView+CacheInvalidation.swift in Sources */,
+				65A1380D21932A6F00968D70 /* MeInteractor.swift in Sources */,
 				8C0EFCE3218C4E2C001B470F /* UserDefaultService.swift in Sources */,
 				8CFAAAC721904AA3001B7AFD /* MainRouter.swift in Sources */,
 				8CFAAAC921904AA3001B7AFD /* MainProtocols.swift in Sources */,
@@ -489,8 +514,11 @@
 				8CEE66272192D4BA00E94945 /* ConversationListPresenter.swift in Sources */,
 				8CFAAACA21904AA3001B7AFD /* MainInteractor.swift in Sources */,
 				8C0EFCE1218C4E2C001B470F /* ThemeConfig.swift in Sources */,
+				65A1380B21932A6F00968D70 /* MeViewController.swift in Sources */,
+				65A1380A21932A6F00968D70 /* MeRouter.swift in Sources */,
 				8C0EFCDF218C4E2C001B470F /* HttpClient.swift in Sources */,
 				8CEE66412192DAF900E94945 /* TableViewConfiguration.swift in Sources */,
+				65A1380C21932A6F00968D70 /* MeProtocols.swift in Sources */,
 				8CFAAABB219027A5001B7AFD /* LoginPresenter.swift in Sources */,
 				8CEE66422192DAF900E94945 /* IndexPathHeightCache.swift in Sources */,
 				8CEE663B2192DAF900E94945 /* SectionModelType.swift in Sources */,

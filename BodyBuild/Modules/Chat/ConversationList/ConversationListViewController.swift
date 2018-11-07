@@ -19,6 +19,7 @@ class ConversationListViewController: UIViewController, ConversationListViewProt
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        configTableView()
     }
     
     private func configTableView() {
@@ -38,6 +39,8 @@ class ConversationListViewController: UIViewController, ConversationListViewProt
             tableViewConfig.configCellContent(cell!, rowModel)
             return cell!
         }
+        
+        tableViewConfig.setSections(presenter?.tableViewSections() ?? [])
     }
 
 }

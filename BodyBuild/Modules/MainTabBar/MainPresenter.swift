@@ -22,4 +22,10 @@ class MainPresenter: MainPresenterProtocol, MainInteractorOutputProtocol {
         self.router = router
     }
 
+    func didSelectTabBarItem(at Index: Int) {
+        
+    }
+    
+
+    
 }

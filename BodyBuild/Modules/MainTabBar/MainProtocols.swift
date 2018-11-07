@@ -19,7 +19,7 @@ protocol MainPresenterProtocol: class {
 
     var interactor: MainInteractorInputProtocol? { get set }
     
-    
+    func didSelectTabBarItem(at Index: Int)
 }
 
 //MARK: Interactor -

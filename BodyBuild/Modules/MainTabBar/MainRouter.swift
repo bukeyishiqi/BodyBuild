@@ -16,7 +16,16 @@ class MainRouter: MainWireframeProtocol {
 
     static func createModule() -> UIViewController {
         // Change to get view from storyboard if not using progammatic UI
-        let view = MainViewController(nibName: nil, bundle: nil)
+//        let view = MainViewController(nibName: nil, bundle: nil)
+        
+        let stroyb = UIStoryboard.init(name: "Main", bundle: nil)
+        let view = stroyb.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+        
+        let viewcontrollers = [ConversationListRouter.createModule(), MeRouter.createModule()]
+        
+//        viewcontrollers.forEach {
+//            $0.tabBarItem = UITabBarItem.init(title: "消息", image: nil, tag: 0)
+//        }
         let interactor = MainInteractor()
         let router = MainRouter()
         let presenter = MainPresenter(interface: view, interactor: interactor, router: router)
@@ -25,6 +34,7 @@ class MainRouter: MainWireframeProtocol {
         interactor.presenter = presenter
         router.viewController = view
 
+        view.viewControllers = viewcontrollers
         return view
     }
 }
