@@ -18,6 +18,8 @@ protocol MainWireframeProtocol: class {
 protocol MainPresenterProtocol: class {
 
     var interactor: MainInteractorInputProtocol? { get set }
+    
+    
 }
 
 //MARK: Interactor -

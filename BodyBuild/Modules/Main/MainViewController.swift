@@ -10,7 +10,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController, MainViewProtocol {
+class MainViewController: UITabBarController, MainViewProtocol {
 
 	var presenter: MainPresenterProtocol?
 
