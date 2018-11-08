@@ -24,6 +24,30 @@
 		8C0EFCE2218C4E2C001B470F /* ServerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0EFCD5218C4E2C001B470F /* ServerConfig.swift */; };
 		8C0EFCE3218C4E2C001B470F /* UserDefaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0EFCD7218C4E2C001B470F /* UserDefaultService.swift */; };
 		8C0EFCE4218C4E2C001B470F /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0EFCDB218C4E2C001B470F /* RequestService.swift */; };
+		8C1FED8E2193E16D00F23F9D /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C1FED8D2193E16D00F23F9D /* Chat.storyboard */; };
+		8C1FED9D2193ED6300F23F9D /* OYUtils+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FED8F2193ED6300F23F9D /* OYUtils+Nib.swift */; };
+		8C1FED9E2193ED6300F23F9D /* OYUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FED902193ED6300F23F9D /* OYUtils.swift */; };
+		8C1FED9F2193ED6300F23F9D /* OYUtils+Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FED912193ED6300F23F9D /* OYUtils+Label.swift */; };
+		8C1FEDA02193ED6300F23F9D /* OYUtils+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FED922193ED6300F23F9D /* OYUtils+UIImage.swift */; };
+		8C1FEDA12193ED6300F23F9D /* OYUtils+CGHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FED932193ED6300F23F9D /* OYUtils+CGHelper.swift */; };
+		8C1FEDA22193ED6300F23F9D /* OYUtils+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FED942193ED6300F23F9D /* OYUtils+File.swift */; };
+		8C1FEDA32193ED6300F23F9D /* OYUtils+AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FED952193ED6300F23F9D /* OYUtils+AlertViewController.swift */; };
+		8C1FEDA42193ED6300F23F9D /* OYUtils+Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FED962193ED6300F23F9D /* OYUtils+Device.swift */; };
+		8C1FEDA62193ED6300F23F9D /* OYUtils+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FED982193ED6300F23F9D /* OYUtils+String.swift */; };
+		8C1FEDA72193ED6300F23F9D /* OYUtils+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FED992193ED6300F23F9D /* OYUtils+Regex.swift */; };
+		8C1FEDA82193ED6300F23F9D /* OYUtils+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FED9A2193ED6300F23F9D /* OYUtils+Json.swift */; };
+		8C1FEDA92193ED6300F23F9D /* OYUtils+Swizzled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FED9B2193ED6300F23F9D /* OYUtils+Swizzled.swift */; };
+		8C1FEDAA2193ED6300F23F9D /* OYUtils+HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FED9C2193ED6300F23F9D /* OYUtils+HUD.swift */; };
+		8C1FEDBA2194371F00F23F9D /* IndexPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FEDB42194371F00F23F9D /* IndexPresenter.swift */; };
+		8C1FEDBB2194371F00F23F9D /* IndexRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FEDB52194371F00F23F9D /* IndexRouter.swift */; };
+		8C1FEDBC2194371F00F23F9D /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FEDB62194371F00F23F9D /* IndexViewController.swift */; };
+		8C1FEDBD2194371F00F23F9D /* IndexProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FEDB72194371F00F23F9D /* IndexProtocols.swift */; };
+		8C1FEDBE2194371F00F23F9D /* IndexInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FEDB82194371F00F23F9D /* IndexInteractor.swift */; };
+		8C1FEDC62194374700F23F9D /* ReservationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FEDC02194374700F23F9D /* ReservationPresenter.swift */; };
+		8C1FEDC72194374700F23F9D /* ReservationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FEDC12194374700F23F9D /* ReservationRouter.swift */; };
+		8C1FEDC82194374700F23F9D /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FEDC22194374700F23F9D /* ReservationViewController.swift */; };
+		8C1FEDC92194374700F23F9D /* ReservationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FEDC32194374700F23F9D /* ReservationProtocols.swift */; };
+		8C1FEDCA2194374700F23F9D /* ReservationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FEDC42194374700F23F9D /* ReservationInteractor.swift */; };
 		8CEE66272192D4BA00E94945 /* ConversationListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEE66212192D4BA00E94945 /* ConversationListPresenter.swift */; };
 		8CEE66282192D4BA00E94945 /* ConversationListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEE66222192D4BA00E94945 /* ConversationListRouter.swift */; };
 		8CEE66292192D4BA00E94945 /* ConversationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEE66232192D4BA00E94945 /* ConversationListViewController.swift */; };
@@ -73,6 +97,31 @@
 		8C0EFCD5218C4E2C001B470F /* ServerConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConfig.swift; sourceTree = "<group>"; };
 		8C0EFCD7218C4E2C001B470F /* UserDefaultService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultService.swift; sourceTree = "<group>"; };
 		8C0EFCDB218C4E2C001B470F /* RequestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
+		8C1FED8D2193E16D00F23F9D /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		8C1FED8F2193ED6300F23F9D /* OYUtils+Nib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OYUtils+Nib.swift"; sourceTree = "<group>"; };
+		8C1FED902193ED6300F23F9D /* OYUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYUtils.swift; sourceTree = "<group>"; };
+		8C1FED912193ED6300F23F9D /* OYUtils+Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OYUtils+Label.swift"; sourceTree = "<group>"; };
+		8C1FED922193ED6300F23F9D /* OYUtils+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OYUtils+UIImage.swift"; sourceTree = "<group>"; };
+		8C1FED932193ED6300F23F9D /* OYUtils+CGHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OYUtils+CGHelper.swift"; sourceTree = "<group>"; };
+		8C1FED942193ED6300F23F9D /* OYUtils+File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OYUtils+File.swift"; sourceTree = "<group>"; };
+		8C1FED952193ED6300F23F9D /* OYUtils+AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OYUtils+AlertViewController.swift"; sourceTree = "<group>"; };
+		8C1FED962193ED6300F23F9D /* OYUtils+Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OYUtils+Device.swift"; sourceTree = "<group>"; };
+		8C1FED982193ED6300F23F9D /* OYUtils+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OYUtils+String.swift"; sourceTree = "<group>"; };
+		8C1FED992193ED6300F23F9D /* OYUtils+Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OYUtils+Regex.swift"; sourceTree = "<group>"; };
+		8C1FED9A2193ED6300F23F9D /* OYUtils+Json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OYUtils+Json.swift"; sourceTree = "<group>"; };
+		8C1FED9B2193ED6300F23F9D /* OYUtils+Swizzled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OYUtils+Swizzled.swift"; sourceTree = "<group>"; };
+		8C1FED9C2193ED6300F23F9D /* OYUtils+HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OYUtils+HUD.swift"; sourceTree = "<group>"; };
+		8C1FEDAB2193EDAD00F23F9D /* BodyBuild-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BodyBuild-Bridging-Header.h"; sourceTree = "<group>"; };
+		8C1FEDB42194371F00F23F9D /* IndexPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexPresenter.swift; sourceTree = "<group>"; };
+		8C1FEDB52194371F00F23F9D /* IndexRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexRouter.swift; sourceTree = "<group>"; };
+		8C1FEDB62194371F00F23F9D /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
+		8C1FEDB72194371F00F23F9D /* IndexProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexProtocols.swift; sourceTree = "<group>"; };
+		8C1FEDB82194371F00F23F9D /* IndexInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexInteractor.swift; sourceTree = "<group>"; };
+		8C1FEDC02194374700F23F9D /* ReservationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationPresenter.swift; sourceTree = "<group>"; };
+		8C1FEDC12194374700F23F9D /* ReservationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationRouter.swift; sourceTree = "<group>"; };
+		8C1FEDC22194374700F23F9D /* ReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
+		8C1FEDC32194374700F23F9D /* ReservationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationProtocols.swift; sourceTree = "<group>"; };
+		8C1FEDC42194374700F23F9D /* ReservationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationInteractor.swift; sourceTree = "<group>"; };
 		8CEE66212192D4BA00E94945 /* ConversationListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListPresenter.swift; sourceTree = "<group>"; };
 		8CEE66222192D4BA00E94945 /* ConversationListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListRouter.swift; sourceTree = "<group>"; };
 		8CEE66232192D4BA00E94945 /* ConversationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +213,7 @@
 				8C0EFCC1218C4138001B470F /* Assets.xcassets */,
 				8C0EFCC3218C4138001B470F /* LaunchScreen.storyboard */,
 				8C0EFCC6218C4138001B470F /* Info.plist */,
+				8C1FEDAB2193EDAD00F23F9D /* BodyBuild-Bridging-Header.h */,
 			);
 			path = BodyBuild;
 			sourceTree = "<group>";
@@ -237,11 +287,36 @@
 			path = RequestService;
 			sourceTree = "<group>";
 		};
+		8C1FEDB22194367700F23F9D /* Reservation */ = {
+			isa = PBXGroup;
+			children = (
+				8C1FEDC02194374700F23F9D /* ReservationPresenter.swift */,
+				8C1FEDC12194374700F23F9D /* ReservationRouter.swift */,
+				8C1FEDC22194374700F23F9D /* ReservationViewController.swift */,
+				8C1FEDC32194374700F23F9D /* ReservationProtocols.swift */,
+				8C1FEDC42194374700F23F9D /* ReservationInteractor.swift */,
+			);
+			path = Reservation;
+			sourceTree = "<group>";
+		};
+		8C1FEDB32194367700F23F9D /* Index */ = {
+			isa = PBXGroup;
+			children = (
+				8C1FEDB42194371F00F23F9D /* IndexPresenter.swift */,
+				8C1FEDB52194371F00F23F9D /* IndexRouter.swift */,
+				8C1FEDB62194371F00F23F9D /* IndexViewController.swift */,
+				8C1FEDB72194371F00F23F9D /* IndexProtocols.swift */,
+				8C1FEDB82194371F00F23F9D /* IndexInteractor.swift */,
+			);
+			path = Index;
+			sourceTree = "<group>";
+		};
 		8CEE661E2192D49800E94945 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
 				8CEE661F2192D49800E94945 /* ChatSession */,
 				8CEE66202192D49800E94945 /* ConversationList */,
+				8C1FED8D2193E16D00F23F9D /* Chat.storyboard */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -300,6 +375,19 @@
 		8CEE663A2192DAF900E94945 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				8C1FED902193ED6300F23F9D /* OYUtils.swift */,
+				8C1FED952193ED6300F23F9D /* OYUtils+AlertViewController.swift */,
+				8C1FED932193ED6300F23F9D /* OYUtils+CGHelper.swift */,
+				8C1FED962193ED6300F23F9D /* OYUtils+Device.swift */,
+				8C1FED942193ED6300F23F9D /* OYUtils+File.swift */,
+				8C1FED9C2193ED6300F23F9D /* OYUtils+HUD.swift */,
+				8C1FED9A2193ED6300F23F9D /* OYUtils+Json.swift */,
+				8C1FED912193ED6300F23F9D /* OYUtils+Label.swift */,
+				8C1FED8F2193ED6300F23F9D /* OYUtils+Nib.swift */,
+				8C1FED992193ED6300F23F9D /* OYUtils+Regex.swift */,
+				8C1FED982193ED6300F23F9D /* OYUtils+String.swift */,
+				8C1FED9B2193ED6300F23F9D /* OYUtils+Swizzled.swift */,
+				8C1FED922193ED6300F23F9D /* OYUtils+UIImage.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -307,6 +395,8 @@
 		8CFAAAB1219027A5001B7AFD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				8C1FEDB32194367700F23F9D /* Index */,
+				8C1FEDB22194367700F23F9D /* Reservation */,
 				65A1380221932A5E00968D70 /* Me */,
 				8CEE661E2192D49800E94945 /* Chat */,
 				8CFAAABD219027C3001B7AFD /* MainTabBar */,
@@ -383,6 +473,7 @@
 				TargetAttributes = {
 					8C0EFCB6218C4137001B470F = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -411,6 +502,7 @@
 			files = (
 				8C0EFCC5218C4138001B470F /* LaunchScreen.storyboard in Resources */,
 				8C0EFCC2218C4138001B470F /* Assets.xcassets in Resources */,
+				8C1FED8E2193E16D00F23F9D /* Chat.storyboard in Resources */,
 				8C0EFCC0218C4137001B470F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,42 +588,65 @@
 			buildActionMask = 2147483647;
 			files = (
 				65A1380921932A6F00968D70 /* MePresenter.swift in Sources */,
+				8C1FED9E2193ED6300F23F9D /* OYUtils.swift in Sources */,
 				8CEE663D2192DAF900E94945 /* TableView+CacheInvalidation.swift in Sources */,
 				65A1380D21932A6F00968D70 /* MeInteractor.swift in Sources */,
 				8C0EFCE3218C4E2C001B470F /* UserDefaultService.swift in Sources */,
+				8C1FEDA22193ED6300F23F9D /* OYUtils+File.swift in Sources */,
 				8CFAAAC721904AA3001B7AFD /* MainRouter.swift in Sources */,
 				8CFAAAC921904AA3001B7AFD /* MainProtocols.swift in Sources */,
 				8C0EFCE4218C4E2C001B470F /* RequestService.swift in Sources */,
 				8CEE663E2192DAF900E94945 /* RowModelType.swift in Sources */,
+				8C1FEDA92193ED6300F23F9D /* OYUtils+Swizzled.swift in Sources */,
+				8C1FEDA32193ED6300F23F9D /* OYUtils+AlertViewController.swift in Sources */,
 				8C0EFCE2218C4E2C001B470F /* ServerConfig.swift in Sources */,
 				8CEE66402192DAF900E94945 /* Calculate.swift in Sources */,
 				8C0EFCBD218C4137001B470F /* ViewController.swift in Sources */,
 				8CEE663F2192DAF900E94945 /* RowModel.swift in Sources */,
+				8C1FEDA02193ED6300F23F9D /* OYUtils+UIImage.swift in Sources */,
 				8C0EFCE0218C4E2C001B470F /* AppInformation.swift in Sources */,
+				8C1FEDA72193ED6300F23F9D /* OYUtils+Regex.swift in Sources */,
 				8C0EFCBB218C4137001B470F /* AppDelegate.swift in Sources */,
+				8C1FEDAA2193ED6300F23F9D /* OYUtils+HUD.swift in Sources */,
 				8CFAAAC821904AA3001B7AFD /* MainViewController.swift in Sources */,
 				8CEE66282192D4BA00E94945 /* ConversationListRouter.swift in Sources */,
 				8CEE66272192D4BA00E94945 /* ConversationListPresenter.swift in Sources */,
+				8C1FED9F2193ED6300F23F9D /* OYUtils+Label.swift in Sources */,
 				8CFAAACA21904AA3001B7AFD /* MainInteractor.swift in Sources */,
+				8C1FEDA82193ED6300F23F9D /* OYUtils+Json.swift in Sources */,
+				8C1FEDBE2194371F00F23F9D /* IndexInteractor.swift in Sources */,
 				8C0EFCE1218C4E2C001B470F /* ThemeConfig.swift in Sources */,
 				65A1380B21932A6F00968D70 /* MeViewController.swift in Sources */,
+				8C1FEDA62193ED6300F23F9D /* OYUtils+String.swift in Sources */,
 				65A1380A21932A6F00968D70 /* MeRouter.swift in Sources */,
+				8C1FEDCA2194374700F23F9D /* ReservationInteractor.swift in Sources */,
 				8C0EFCDF218C4E2C001B470F /* HttpClient.swift in Sources */,
 				8CEE66412192DAF900E94945 /* TableViewConfiguration.swift in Sources */,
+				8C1FEDBD2194371F00F23F9D /* IndexProtocols.swift in Sources */,
 				65A1380C21932A6F00968D70 /* MeProtocols.swift in Sources */,
+				8C1FEDC92194374700F23F9D /* ReservationProtocols.swift in Sources */,
 				8CFAAABB219027A5001B7AFD /* LoginPresenter.swift in Sources */,
+				8C1FEDBA2194371F00F23F9D /* IndexPresenter.swift in Sources */,
+				8C1FEDC82194374700F23F9D /* ReservationViewController.swift in Sources */,
 				8CEE66422192DAF900E94945 /* IndexPathHeightCache.swift in Sources */,
 				8CEE663B2192DAF900E94945 /* SectionModelType.swift in Sources */,
 				8CEE66292192D4BA00E94945 /* ConversationListViewController.swift in Sources */,
 				8CFAAAB8219027A5001B7AFD /* LoginInteractor.swift in Sources */,
 				8CEE662A2192D4BA00E94945 /* ConversationListProtocols.swift in Sources */,
+				8C1FEDBB2194371F00F23F9D /* IndexRouter.swift in Sources */,
+				8C1FEDA42193ED6300F23F9D /* OYUtils+Device.swift in Sources */,
 				8CEE662B2192D4BA00E94945 /* ConversationListInteractor.swift in Sources */,
 				8CEE663C2192DAF900E94945 /* SectionModel.swift in Sources */,
 				8CFAAAC621904AA3001B7AFD /* MainPresenter.swift in Sources */,
 				8CFAAABA219027A5001B7AFD /* LoginProtocols.swift in Sources */,
+				8C1FEDBC2194371F00F23F9D /* IndexViewController.swift in Sources */,
+				8C1FEDA12193ED6300F23F9D /* OYUtils+CGHelper.swift in Sources */,
 				8C0EFCDE218C4E2C001B470F /* RequestSet.swift in Sources */,
 				8CEE662F2192D7AE00E94945 /* ConversationListCell.swift in Sources */,
+				8C1FEDC72194374700F23F9D /* ReservationRouter.swift in Sources */,
+				8C1FEDC62194374700F23F9D /* ReservationPresenter.swift in Sources */,
 				8CFAAABC219027A5001B7AFD /* LoginRouter.swift in Sources */,
+				8C1FED9D2193ED6300F23F9D /* OYUtils+Nib.swift in Sources */,
 				8CFAAAB9219027A5001B7AFD /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -679,17 +794,23 @@
 			baseConfigurationReference = 313B88B1ECB6A5EF5DB94DCA /* Pods-BodyBuild.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A4GF3F53H9;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = BodyBuild/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.carisok.BodyBuild;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BodyBuild/BodyBuild-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${PODS_ROOT}/**";
 			};
 			name = Debug;
 		};
@@ -698,17 +819,22 @@
 			baseConfigurationReference = 66E33F9AF3BC90A948B14AFB /* Pods-BodyBuild.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A4GF3F53H9;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = BodyBuild/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.carisok.BodyBuild;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BodyBuild/BodyBuild-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${PODS_ROOT}/**";
 			};
 			name = Release;
 		};

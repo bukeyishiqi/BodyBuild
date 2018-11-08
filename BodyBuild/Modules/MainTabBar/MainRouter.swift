@@ -15,13 +15,14 @@ class MainRouter: MainWireframeProtocol {
     weak var viewController: UIViewController?
 
     static func createModule() -> UIViewController {
-        // Change to get view from storyboard if not using progammatic UI
-//        let view = MainViewController(nibName: nil, bundle: nil)
         
         let stroyb = UIStoryboard.init(name: "Main", bundle: nil)
         let view = stroyb.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
         
-        let viewcontrollers = [ConversationListRouter.createModule(), MeRouter.createModule()]
+        let viewcontrollers = [IndexRouter.createModule(),
+                               ConversationListRouter.createModule(),
+                               ReservationRouter.createModule(),
+                               MeRouter.createModule()]
         
 //        viewcontrollers.forEach {
 //            $0.tabBarItem = UITabBarItem.init(title: "消息", image: nil, tag: 0)

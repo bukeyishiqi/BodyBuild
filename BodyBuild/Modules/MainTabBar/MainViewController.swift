@@ -16,7 +16,22 @@ class MainViewController: UITabBarController, MainViewProtocol {
 
 	override func viewDidLoad() {
         super.viewDidLoad()
-        
+        configTabBar()
     }
 
+    private func configTabBar() {
+        let titles = ["首页", "消息", "预约", "我的"]
+        let images = ["", "", "", ""]
+        let selectImages = ["", "", "", ""]
+        
+        for index in 0..<titles.count {
+            setChildController(controller: self.viewControllers![index], title: titles[index], image: images[index], selectImage: selectImages[index])
+        }
+    }
+    
+    private func setChildController(controller: UIViewController, title: String, image: String, selectImage: String) {
+        controller.tabBarItem.title = title
+        controller.tabBarItem.image = UIImage.init(named: image)
+        controller.tabBarItem.selectedImage = UIImage.init(named: selectImage)
+    }
 }

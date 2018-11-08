@@ -9,6 +9,19 @@
 			<key>orderHint</key>
 			<integer>10</integer>
 		</dict>
+		<key>BodyBuild.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>8C0EFCB6218C4137001B470F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

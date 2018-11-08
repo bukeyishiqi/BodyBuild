@@ -15,7 +15,7 @@ class ConversationListRouter: ConversationListWireframeProtocol {
     weak var viewController: UIViewController?
     
     static func createModule() -> UIViewController {
-        let stroyb = UIStoryboard.init(name: "Main", bundle: nil)
+        let stroyb = UIStoryboard.init(name: "Chat", bundle: nil)
         let view = stroyb.instantiateViewController(withIdentifier: "ConversationListViewController") as! ConversationListViewController
         
 //        let view = ConversationListViewController(nibName: nil, bundle: nil)
