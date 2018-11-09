@@ -12,8 +12,12 @@
 		65A1380B21932A6F00968D70 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A1380521932A6F00968D70 /* MeViewController.swift */; };
 		65A1380C21932A6F00968D70 /* MeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A1380621932A6F00968D70 /* MeProtocols.swift */; };
 		65A1380D21932A6F00968D70 /* MeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A1380721932A6F00968D70 /* MeInteractor.swift */; };
+		8C0A95F32195878600E9BCC0 /* ZJPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A95EF2195878600E9BCC0 /* ZJPageTitleView.swift */; };
+		8C0A95F42195878600E9BCC0 /* ZJPageOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A95F02195878600E9BCC0 /* ZJPageOptions.swift */; };
+		8C0A95F52195878600E9BCC0 /* ZJBasePageControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A95F12195878600E9BCC0 /* ZJBasePageControlCell.swift */; };
+		8C0A95F62195878600E9BCC0 /* ZJPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A95F22195878600E9BCC0 /* ZJPageContentView.swift */; };
+		8C0A95F821958AD100E9BCC0 /* OYUtils+theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A95F721958AD100E9BCC0 /* OYUtils+theme.swift */; };
 		8C0EFCBB218C4137001B470F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0EFCBA218C4137001B470F /* AppDelegate.swift */; };
-		8C0EFCBD218C4137001B470F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0EFCBC218C4137001B470F /* ViewController.swift */; };
 		8C0EFCC0218C4137001B470F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C0EFCBE218C4137001B470F /* Main.storyboard */; };
 		8C0EFCC2218C4138001B470F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C0EFCC1218C4138001B470F /* Assets.xcassets */; };
 		8C0EFCC5218C4138001B470F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C0EFCC3218C4138001B470F /* LaunchScreen.storyboard */; };
@@ -83,9 +87,13 @@
 		65A1380621932A6F00968D70 /* MeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeProtocols.swift; sourceTree = "<group>"; };
 		65A1380721932A6F00968D70 /* MeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeInteractor.swift; sourceTree = "<group>"; };
 		66E33F9AF3BC90A948B14AFB /* Pods-BodyBuild.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BodyBuild.release.xcconfig"; path = "Pods/Target Support Files/Pods-BodyBuild/Pods-BodyBuild.release.xcconfig"; sourceTree = "<group>"; };
+		8C0A95EF2195878600E9BCC0 /* ZJPageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJPageTitleView.swift; sourceTree = "<group>"; };
+		8C0A95F02195878600E9BCC0 /* ZJPageOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJPageOptions.swift; sourceTree = "<group>"; };
+		8C0A95F12195878600E9BCC0 /* ZJBasePageControlCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJBasePageControlCell.swift; sourceTree = "<group>"; };
+		8C0A95F22195878600E9BCC0 /* ZJPageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJPageContentView.swift; sourceTree = "<group>"; };
+		8C0A95F721958AD100E9BCC0 /* OYUtils+theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OYUtils+theme.swift"; sourceTree = "<group>"; };
 		8C0EFCB7218C4137001B470F /* BodyBuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BodyBuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0EFCBA218C4137001B470F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C0EFCBC218C4137001B470F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8C0EFCBF218C4137001B470F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C0EFCC1218C4138001B470F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C0EFCC4218C4138001B470F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -181,6 +189,25 @@
 			path = Me;
 			sourceTree = "<group>";
 		};
+		8C0A95ED2195878600E9BCC0 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				8C0A95EE2195878600E9BCC0 /* ZJPageView */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		8C0A95EE2195878600E9BCC0 /* ZJPageView */ = {
+			isa = PBXGroup;
+			children = (
+				8C0A95EF2195878600E9BCC0 /* ZJPageTitleView.swift */,
+				8C0A95F02195878600E9BCC0 /* ZJPageOptions.swift */,
+				8C0A95F12195878600E9BCC0 /* ZJBasePageControlCell.swift */,
+				8C0A95F22195878600E9BCC0 /* ZJPageContentView.swift */,
+			);
+			path = ZJPageView;
+			sourceTree = "<group>";
+		};
 		8C0EFCAE218C4137001B470F = {
 			isa = PBXGroup;
 			children = (
@@ -207,8 +234,8 @@
 				8C0EFCD1218C4E2C001B470F /* Services */,
 				8CFAAAB1219027A5001B7AFD /* Modules */,
 				8CEE663A2192DAF900E94945 /* Utility */,
+				8C0A95ED2195878600E9BCC0 /* CustomViews */,
 				8C0EFCBA218C4137001B470F /* AppDelegate.swift */,
-				8C0EFCBC218C4137001B470F /* ViewController.swift */,
 				8C0EFCBE218C4137001B470F /* Main.storyboard */,
 				8C0EFCC1218C4138001B470F /* Assets.xcassets */,
 				8C0EFCC3218C4138001B470F /* LaunchScreen.storyboard */,
@@ -376,6 +403,7 @@
 			isa = PBXGroup;
 			children = (
 				8C1FED902193ED6300F23F9D /* OYUtils.swift */,
+				8C0A95F721958AD100E9BCC0 /* OYUtils+theme.swift */,
 				8C1FED952193ED6300F23F9D /* OYUtils+AlertViewController.swift */,
 				8C1FED932193ED6300F23F9D /* OYUtils+CGHelper.swift */,
 				8C1FED962193ED6300F23F9D /* OYUtils+Device.swift */,
@@ -523,6 +551,7 @@
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/SBCycleScrollView/SBCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
@@ -535,6 +564,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SBCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
@@ -601,7 +631,6 @@
 				8C1FEDA32193ED6300F23F9D /* OYUtils+AlertViewController.swift in Sources */,
 				8C0EFCE2218C4E2C001B470F /* ServerConfig.swift in Sources */,
 				8CEE66402192DAF900E94945 /* Calculate.swift in Sources */,
-				8C0EFCBD218C4137001B470F /* ViewController.swift in Sources */,
 				8CEE663F2192DAF900E94945 /* RowModel.swift in Sources */,
 				8C1FEDA02193ED6300F23F9D /* OYUtils+UIImage.swift in Sources */,
 				8C0EFCE0218C4E2C001B470F /* AppInformation.swift in Sources */,
@@ -615,6 +644,7 @@
 				8CFAAACA21904AA3001B7AFD /* MainInteractor.swift in Sources */,
 				8C1FEDA82193ED6300F23F9D /* OYUtils+Json.swift in Sources */,
 				8C1FEDBE2194371F00F23F9D /* IndexInteractor.swift in Sources */,
+				8C0A95F32195878600E9BCC0 /* ZJPageTitleView.swift in Sources */,
 				8C0EFCE1218C4E2C001B470F /* ThemeConfig.swift in Sources */,
 				65A1380B21932A6F00968D70 /* MeViewController.swift in Sources */,
 				8C1FEDA62193ED6300F23F9D /* OYUtils+String.swift in Sources */,
@@ -631,18 +661,22 @@
 				8CEE66422192DAF900E94945 /* IndexPathHeightCache.swift in Sources */,
 				8CEE663B2192DAF900E94945 /* SectionModelType.swift in Sources */,
 				8CEE66292192D4BA00E94945 /* ConversationListViewController.swift in Sources */,
+				8C0A95F42195878600E9BCC0 /* ZJPageOptions.swift in Sources */,
 				8CFAAAB8219027A5001B7AFD /* LoginInteractor.swift in Sources */,
 				8CEE662A2192D4BA00E94945 /* ConversationListProtocols.swift in Sources */,
 				8C1FEDBB2194371F00F23F9D /* IndexRouter.swift in Sources */,
 				8C1FEDA42193ED6300F23F9D /* OYUtils+Device.swift in Sources */,
 				8CEE662B2192D4BA00E94945 /* ConversationListInteractor.swift in Sources */,
+				8C0A95F52195878600E9BCC0 /* ZJBasePageControlCell.swift in Sources */,
 				8CEE663C2192DAF900E94945 /* SectionModel.swift in Sources */,
 				8CFAAAC621904AA3001B7AFD /* MainPresenter.swift in Sources */,
+				8C0A95F821958AD100E9BCC0 /* OYUtils+theme.swift in Sources */,
 				8CFAAABA219027A5001B7AFD /* LoginProtocols.swift in Sources */,
 				8C1FEDBC2194371F00F23F9D /* IndexViewController.swift in Sources */,
 				8C1FEDA12193ED6300F23F9D /* OYUtils+CGHelper.swift in Sources */,
 				8C0EFCDE218C4E2C001B470F /* RequestSet.swift in Sources */,
 				8CEE662F2192D7AE00E94945 /* ConversationListCell.swift in Sources */,
+				8C0A95F62195878600E9BCC0 /* ZJPageContentView.swift in Sources */,
 				8C1FEDC72194374700F23F9D /* ReservationRouter.swift in Sources */,
 				8C1FEDC62194374700F23F9D /* ReservationPresenter.swift in Sources */,
 				8CFAAABC219027A5001B7AFD /* LoginRouter.swift in Sources */,

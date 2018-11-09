@@ -43,7 +43,6 @@ class ThemeConfig: NSObject {
         
         return image
     }
-
 }
 
 

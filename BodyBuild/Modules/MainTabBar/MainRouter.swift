@@ -22,7 +22,9 @@ class MainRouter: MainWireframeProtocol {
         let viewcontrollers = [IndexRouter.createModule(),
                                ConversationListRouter.createModule(),
                                ReservationRouter.createModule(),
-                               MeRouter.createModule()]
+                               MeRouter.createModule()].map {
+                                UINavigationController.init(rootViewController: $0)
+        }
         
 //        viewcontrollers.forEach {
 //            $0.tabBarItem = UITabBarItem.init(title: "消息", image: nil, tag: 0)

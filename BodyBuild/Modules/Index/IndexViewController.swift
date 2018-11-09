@@ -9,13 +9,100 @@
 //
 
 import UIKit
+import SBCycleScrollView
+import SnapKit
 
 class IndexViewController: UIViewController, IndexViewProtocol {
 
-	var presenter: IndexPresenterProtocol?
+    // 标题数组
+    private lazy var titles : [String] = ["教练列表","最新活动","健康知识","健康产品"]
 
+	var presenter: IndexPresenterProtocol?
+    
+    // 轮播图
+    private lazy var cycleScrollView: CycleScrollView = {
+        var option = CycleOptions()
+        let cycleView = CycleScrollView.initScrollView(frame: CGRect.init(x: 0, y: 0, width: kScreenW, height: OYUtils.Adapt(214)), delegate: self, placehoder: UIImage.init(named: ""), cycleOptions: option)
+        cycleView.imageNamesGroup = ["liveImage","liveImage","liveImage"]
+        return cycleView
+    }()
+    
+    // 地理位置
+    private lazy var locationView: UIView = {
+        let view = UIView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenW, height: 80))
+        view.backgroundColor = UIColor.red
+        return view
+    }()
+    
+    // 标签列表
+    private lazy var pageTitleView : ZJPageTitleView = { [weak self] in
+        let frame = CGRect(x: 0, y: 0, width: kScreenW, height: 50)
+        let option = ZJPageOptions()
+        
+        option.kBotLineColor = UIColor.black
+        option.kNormalColor = (38, 38, 38)
+        option.kSelectColor =  (38, 38, 38)
+        option.kTitleSelectFontSize = 16
+        option.isShowBottomLine = true
+        option.kIsShowBottomBorderLine = true
+        let pageTitleViw = ZJPageTitleView(frame: frame, titles: titles ,options:option)
+        pageTitleViw.delegate = self
+        return pageTitleViw
+        }()
+    
 	override func viewDidLoad() {
         super.viewDidLoad()
+        setUpAllView()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+    }
+}
+
+
+// MARK: CycleScrollViewDelegate
+
+extension IndexViewController: CycleScrollViewDelegate {
+    func didSelectedCycleScrollView(_ cycleScrollView: CycleScrollView, _ Index: NSInteger) {
+        
+    }
+}
+
+// MARK: PageTitleViewDelegate
+
+extension IndexViewController: PageTitleViewDelegate {
+    func pageTitleView(titleView: ZJPageTitleView, selectedIndex index: Int) {
+        
+    }
+    
+    
+}
+
+// MARK: 配置 UI 视图
+
+extension IndexViewController {
+    func setUpAllView() {
+        view.addSubview(cycleScrollView)
+
+        view.addSubview(locationView)
+        locationView.snp.makeConstraints {
+            $0.top.equalTo(cycleScrollView.snp.bottom)
+            $0.left.equalTo(view.snp.left)
+            $0.right.equalTo(view.snp.right)
+            $0.height.equalTo(80)
+        }
+        
+        view.addSubview(pageTitleView)
+        pageTitleView.snp.makeConstraints {
+            $0.top.equalTo(locationView.snp.bottom)
+            $0.topMargin.equalTo(10)
+            $0.left.equalTo(view.snp.left)
+            $0.right.equalTo(view.snp.right)
+            $0.height.equalTo(50)
+        }
+    }
 }

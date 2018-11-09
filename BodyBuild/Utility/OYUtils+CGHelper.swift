@@ -13,16 +13,35 @@ import UIKit
 //! 当前设备frame
 let CURRENT_APP_FRAME = UIScreen.main.bounds
 
-let SCREEN_HEIGHT = CURRENT_APP_FRAME.height
-let SCREEN_WIDTH = CURRENT_APP_FRAME.width
-let SCREEN_PROPORTION = SCREEN_WIDTH / 640
-
+let kScreenH = CURRENT_APP_FRAME.height
+let kScreenW = CURRENT_APP_FRAME.width
+// 宽度比
+let kWidthRatio = kScreenW / 375.0
+// 高度比
+let kHeightRatio = kScreenH / 667.0
 
 
 
 
 extension OYUtils {
 
+    // 自适应
+    class func Adapt(_ value : CGFloat) -> CGFloat {
+        return AdaptW(value)
+    }
+    
+    // 自适应宽度
+    class func AdaptW(_ value : CGFloat) -> CGFloat {
+        
+        return ceil(value) * kWidthRatio
+    }
+    
+    // 自适应高度
+    class func AdaptH(_ value : CGFloat) -> CGFloat {
+        
+        return ceil(value) * kHeightRatio
+    }
+    
     class func screenScale() -> CGFloat {
         let _scale: CGFloat = {
             return UIScreen.main.scale
