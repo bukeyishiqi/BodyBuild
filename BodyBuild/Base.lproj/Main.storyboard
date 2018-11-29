@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SJl-Xr-5GU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SJl-Xr-5GU">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,11 +13,14 @@
         <scene sceneID="wgE-fI-sVj">
             <objects>
                 <viewController storyboardIdentifier="ReservationViewController" id="ghB-Hc-6cY" customClass="ReservationViewController" customModule="BodyBuild" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JMa-7U-iE6"/>
+                        <viewControllerLayoutGuide type="bottom" id="AXR-No-U4j"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="h9E-3e-RGd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="PA7-bc-Ja9"/>
                     </view>
                     <navigationItem key="navigationItem" id="Wfe-mN-uaD"/>
                 </viewController>
@@ -30,11 +32,14 @@
         <scene sceneID="Qf8-gX-KbG">
             <objects>
                 <viewController storyboardIdentifier="MeViewController" id="PNT-09-moN" customClass="MeViewController" customModule="BodyBuild" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="flN-fD-0IY"/>
+                        <viewControllerLayoutGuide type="bottom" id="JSa-Iz-9UE"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oMc-TI-hc6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="nCN-bw-Hci"/>
                     </view>
                     <navigationItem key="navigationItem" id="m8R-C9-QAR"/>
                 </viewController>
@@ -45,12 +50,15 @@
         <!--首页-->
         <scene sceneID="pY0-tt-ht5">
             <objects>
-                <viewController storyboardIdentifier="IndexViewController" title="首页" id="wqO-F9-VWg" customClass="IndexViewController" customModule="BodyBuild" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IndexViewController" title="首页" automaticallyAdjustsScrollViewInsets="NO" id="wqO-F9-VWg" customClass="IndexViewController" customModule="BodyBuild" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9LJ-LV-8m4"/>
+                        <viewControllerLayoutGuide type="bottom" id="TtO-57-fFz"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2Td-7H-PYP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="m3l-4T-unA"/>
                     </view>
                     <navigationItem key="navigationItem" title="首页" id="Y8x-zl-lX6"/>
                 </viewController>

@@ -52,6 +52,7 @@
 		8C1FEDC82194374700F23F9D /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FEDC22194374700F23F9D /* ReservationViewController.swift */; };
 		8C1FEDC92194374700F23F9D /* ReservationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FEDC32194374700F23F9D /* ReservationProtocols.swift */; };
 		8C1FEDCA2194374700F23F9D /* ReservationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FEDC42194374700F23F9D /* ReservationInteractor.swift */; };
+		8CCA663D21AF8ED600D069FF /* OYUtils+ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCA663C21AF8ED600D069FF /* OYUtils+ImageView.swift */; };
 		8CEE66272192D4BA00E94945 /* ConversationListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEE66212192D4BA00E94945 /* ConversationListPresenter.swift */; };
 		8CEE66282192D4BA00E94945 /* ConversationListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEE66222192D4BA00E94945 /* ConversationListRouter.swift */; };
 		8CEE66292192D4BA00E94945 /* ConversationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEE66232192D4BA00E94945 /* ConversationListViewController.swift */; };
@@ -130,6 +131,7 @@
 		8C1FEDC22194374700F23F9D /* ReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
 		8C1FEDC32194374700F23F9D /* ReservationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationProtocols.swift; sourceTree = "<group>"; };
 		8C1FEDC42194374700F23F9D /* ReservationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationInteractor.swift; sourceTree = "<group>"; };
+		8CCA663C21AF8ED600D069FF /* OYUtils+ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OYUtils+ImageView.swift"; sourceTree = "<group>"; };
 		8CEE66212192D4BA00E94945 /* ConversationListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListPresenter.swift; sourceTree = "<group>"; };
 		8CEE66222192D4BA00E94945 /* ConversationListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListRouter.swift; sourceTree = "<group>"; };
 		8CEE66232192D4BA00E94945 /* ConversationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListViewController.swift; sourceTree = "<group>"; };
@@ -405,6 +407,7 @@
 				8C1FED902193ED6300F23F9D /* OYUtils.swift */,
 				8C0A95F721958AD100E9BCC0 /* OYUtils+theme.swift */,
 				8C1FED952193ED6300F23F9D /* OYUtils+AlertViewController.swift */,
+				8CCA663C21AF8ED600D069FF /* OYUtils+ImageView.swift */,
 				8C1FED932193ED6300F23F9D /* OYUtils+CGHelper.swift */,
 				8C1FED962193ED6300F23F9D /* OYUtils+Device.swift */,
 				8C1FED942193ED6300F23F9D /* OYUtils+File.swift */,
@@ -547,10 +550,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-BodyBuild/Pods-BodyBuild-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SBCycleScrollView/SBCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -560,10 +566,13 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SBCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -623,6 +632,7 @@
 				65A1380D21932A6F00968D70 /* MeInteractor.swift in Sources */,
 				8C0EFCE3218C4E2C001B470F /* UserDefaultService.swift in Sources */,
 				8C1FEDA22193ED6300F23F9D /* OYUtils+File.swift in Sources */,
+				8CCA663D21AF8ED600D069FF /* OYUtils+ImageView.swift in Sources */,
 				8CFAAAC721904AA3001B7AFD /* MainRouter.swift in Sources */,
 				8CFAAAC921904AA3001B7AFD /* MainProtocols.swift in Sources */,
 				8C0EFCE4218C4E2C001B470F /* RequestService.swift in Sources */,
@@ -834,10 +844,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = BodyBuild/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.carisok.BodyBuild;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BodyBuild/BodyBuild-Bridging-Header.h";
@@ -859,10 +866,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = BodyBuild/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.carisok.BodyBuild;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BodyBuild/BodyBuild-Bridging-Header.h";
