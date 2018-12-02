@@ -14,8 +14,8 @@
             <objects>
                 <viewController storyboardIdentifier="ReservationViewController" id="ghB-Hc-6cY" customClass="ReservationViewController" customModule="BodyBuild" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2sg-le-74u"/>
-                        <viewControllerLayoutGuide type="bottom" id="tdV-pV-0tU"/>
+                        <viewControllerLayoutGuide type="top" id="JMa-7U-iE6"/>
+                        <viewControllerLayoutGuide type="bottom" id="AXR-No-U4j"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="h9E-3e-RGd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -33,8 +33,8 @@
             <objects>
                 <viewController storyboardIdentifier="MeViewController" id="PNT-09-moN" customClass="MeViewController" customModule="BodyBuild" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="99a-tK-CCj"/>
-                        <viewControllerLayoutGuide type="bottom" id="V92-Xm-BDf"/>
+                        <viewControllerLayoutGuide type="top" id="flN-fD-0IY"/>
+                        <viewControllerLayoutGuide type="bottom" id="JSa-Iz-9UE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oMc-TI-hc6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -49,8 +49,8 @@
                         <constraints>
                             <constraint firstItem="j8U-ZP-r2y" firstAttribute="top" secondItem="oMc-TI-hc6" secondAttribute="top" id="515-et-h5h"/>
                             <constraint firstItem="j8U-ZP-r2y" firstAttribute="trailing" secondItem="oMc-TI-hc6" secondAttribute="trailing" id="O44-Oi-FZy"/>
+                            <constraint firstItem="j8U-ZP-r2y" firstAttribute="bottom" secondItem="JSa-Iz-9UE" secondAttribute="top" id="X1R-AL-bX0"/>
                             <constraint firstItem="j8U-ZP-r2y" firstAttribute="leading" secondItem="oMc-TI-hc6" secondAttribute="leading" id="aJI-lk-GYf"/>
-                            <constraint firstItem="j8U-ZP-r2y" firstAttribute="bottom" secondItem="V92-Xm-BDf" secondAttribute="top" id="vKG-bq-ohK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="m8R-C9-QAR"/>
@@ -66,10 +66,10 @@
         <!--首页-->
         <scene sceneID="pY0-tt-ht5">
             <objects>
-                <viewController storyboardIdentifier="IndexViewController" title="首页" id="wqO-F9-VWg" customClass="IndexViewController" customModule="BodyBuild" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IndexViewController" title="首页" automaticallyAdjustsScrollViewInsets="NO" id="wqO-F9-VWg" customClass="IndexViewController" customModule="BodyBuild" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5zF-fW-xaM"/>
-                        <viewControllerLayoutGuide type="bottom" id="yld-1s-r7d"/>
+                        <viewControllerLayoutGuide type="top" id="9LJ-LV-8m4"/>
+                        <viewControllerLayoutGuide type="bottom" id="TtO-57-fFz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2Td-7H-PYP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>

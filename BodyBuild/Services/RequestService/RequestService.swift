@@ -19,9 +19,7 @@ public protocol RequestServiceType {
 /**
  *  网络数据交付层协议
  */
-public protocol NetworkRequestServiceType {
-    
-}
+public protocol NetworkRequestServiceType {}
 
 
 // MARK: *  网络数据交付层
