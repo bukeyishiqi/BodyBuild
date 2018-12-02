@@ -23,3 +23,10 @@ class MePresenter: MePresenterProtocol, MeInteractorOutputProtocol {
     }
 
 }
+
+// MARK: ACTION
+extension MePresenter {
+    func handlerSettingAction() {
+        router.pushToSettingViewController()
+    }
+}

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SJl-Xr-5GU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SJl-Xr-5GU">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,11 +13,14 @@
         <scene sceneID="wgE-fI-sVj">
             <objects>
                 <viewController storyboardIdentifier="ReservationViewController" id="ghB-Hc-6cY" customClass="ReservationViewController" customModule="BodyBuild" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2sg-le-74u"/>
+                        <viewControllerLayoutGuide type="bottom" id="tdV-pV-0tU"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="h9E-3e-RGd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="PA7-bc-Ja9"/>
                     </view>
                     <navigationItem key="navigationItem" id="Wfe-mN-uaD"/>
                 </viewController>
@@ -30,27 +32,49 @@
         <scene sceneID="Qf8-gX-KbG">
             <objects>
                 <viewController storyboardIdentifier="MeViewController" id="PNT-09-moN" customClass="MeViewController" customModule="BodyBuild" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="99a-tK-CCj"/>
+                        <viewControllerLayoutGuide type="bottom" id="V92-Xm-BDf"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oMc-TI-hc6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j8U-ZP-r2y">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="nCN-bw-Hci"/>
+                        <constraints>
+                            <constraint firstItem="j8U-ZP-r2y" firstAttribute="top" secondItem="oMc-TI-hc6" secondAttribute="top" id="515-et-h5h"/>
+                            <constraint firstItem="j8U-ZP-r2y" firstAttribute="trailing" secondItem="oMc-TI-hc6" secondAttribute="trailing" id="O44-Oi-FZy"/>
+                            <constraint firstItem="j8U-ZP-r2y" firstAttribute="leading" secondItem="oMc-TI-hc6" secondAttribute="leading" id="aJI-lk-GYf"/>
+                            <constraint firstItem="j8U-ZP-r2y" firstAttribute="bottom" secondItem="V92-Xm-BDf" secondAttribute="top" id="vKG-bq-ohK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="m8R-C9-QAR"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="j8U-ZP-r2y" id="b1R-yp-cjj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="axB-fJ-8Ks" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1612" y="1031.3343328335832"/>
+            <point key="canvasLocation" x="1612" y="1030.4347826086957"/>
         </scene>
         <!--首页-->
         <scene sceneID="pY0-tt-ht5">
             <objects>
                 <viewController storyboardIdentifier="IndexViewController" title="首页" id="wqO-F9-VWg" customClass="IndexViewController" customModule="BodyBuild" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5zF-fW-xaM"/>
+                        <viewControllerLayoutGuide type="bottom" id="yld-1s-r7d"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2Td-7H-PYP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="m3l-4T-unA"/>
                     </view>
                     <navigationItem key="navigationItem" title="首页" id="Y8x-zl-lX6"/>
                 </viewController>

@@ -14,8 +14,34 @@ class MeViewController: UIViewController, MeViewProtocol {
 
 	var presenter: MePresenterProtocol?
 
-	override func viewDidLoad() {
+    @IBOutlet weak var tableView: UITableView!
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if #available(iOS 11.0, *) {
+            self.tableView.contentInsetAdjustmentBehavior = .never
+            self.tableView.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
+        } else {
+            self.automaticallyAdjustsScrollViewInsets = false
+        }
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
+    private func configTableView() {
+        
+    }
+    
+    @IBAction func settingAction(_ sender: UIButton) {
+        presenter?.handlerSettingAction()
+    }
+    
 }

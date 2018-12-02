@@ -28,4 +28,9 @@ class MeRouter: MeWireframeProtocol {
 
         return view
     }
+    
+    func pushToSettingViewController() {
+        let controller = SettiingRouter.createModule()
+        self.viewController?.navigationController?.pushViewController(controller, animated: true)
+    }
 }

@@ -12,12 +12,16 @@ import Foundation
 
 //MARK: Wireframe -
 protocol MeWireframeProtocol: class {
-
+    func pushToSettingViewController()
 }
+
 //MARK: Presenter -
 protocol MePresenterProtocol: class {
 
     var interactor: MeInteractorInputProtocol? { get set }
+    
+    // action
+    func handlerSettingAction()
 }
 
 //MARK: Interactor -
