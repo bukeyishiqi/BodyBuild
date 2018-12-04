@@ -2,4 +2,54 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BodyBuild/CustomViews/ZJPageView/ZJPageTitleView.swift"
+            timestampString = "565500717.091228"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "308"
+            endingLineNumber = "308"
+            landmarkName = "titleLabelClick(tapGesture:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BodyBuild.ZJPageTitleView.(titleLabelClick in _E91F1E8E60CA98A8101FF02988926BC6)(tapGesture: __C.UITapGestureRecognizer) -&gt; ()"
+                  moduleName = "BodyBuild"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bukeyishi/Work/BodyBuild/BodyBuild/CustomViews/ZJPageView/ZJPageTitleView.swift"
+                  timestampString = "565500446.210306"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "308"
+                  endingLineNumber = "308"
+                  offsetFromSymbolStart = "2533">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BodyBuild.ZJPageTitleView.(titleLabelClick in _E91F1E8E60CA98A8101FF02988926BC6)(tapGesture: __C.UITapGestureRecognizer) -&gt; ()"
+                  moduleName = "BodyBuild"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bukeyishi/Work/BodyBuild/BodyBuild/CustomViews/ZJPageView/ZJPageTitleView.swift"
+                  timestampString = "565500446.212137"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "308"
+                  endingLineNumber = "308"
+                  offsetFromSymbolStart = "3976">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

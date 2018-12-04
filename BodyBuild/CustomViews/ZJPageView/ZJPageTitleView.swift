@@ -182,7 +182,7 @@ extension ZJPageTitleView {
             if option.isTitleScrollEnable {
                 
                 labelW = (titles[i] as NSString).boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: 0), options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font : titleLabel.font], context: nil).width
-                labelX = i == 0 ? option.kMarginW * 0.5 : (titleLabs[i-1].frame.maxX + option.kMarginW)
+                labelX = i == 0 ? option.kMarginW * 1 : (titleLabs[i-1].frame.maxX + option.kMarginW)
                 
             } else if option.kItemWidth != 0 {
                 
@@ -311,7 +311,7 @@ extension ZJPageTitleView {
         }
         
 //        if option.isShowBottomLine {
-            adjustLabelPosition(currentLab!)
+//            adjustLabelPosition(currentLab!)
 //        }
         
         if option.isShowBottomLine {
