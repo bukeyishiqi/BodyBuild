@@ -76,10 +76,8 @@ extension IndexViewController: CycleScrollViewDelegate {
 
 extension IndexViewController: PageTitleViewDelegate {
     func pageTitleView(titleView: ZJPageTitleView, selectedIndex index: Int) {
-        
+
     }
-    
-    
 }
 
 // MARK: 配置 UI 视图

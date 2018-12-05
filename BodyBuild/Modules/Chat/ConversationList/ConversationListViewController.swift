@@ -19,6 +19,7 @@ class ConversationListViewController: UIViewController, ConversationListViewProt
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "会话列表"
         configTableView()
     }
     

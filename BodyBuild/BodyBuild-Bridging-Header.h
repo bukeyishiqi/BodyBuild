@@ -11,6 +11,7 @@
 #import "MJRefresh.h"
 #import "MBProgressHUD.h"
 #import "IQKeyboardManager.h"
+#import <KVOController/KVOController.h>
 
 ////#import <AsyncDisplayKit/AsyncDisplayKit.h>
 //// 引入JPush功能所需头文件

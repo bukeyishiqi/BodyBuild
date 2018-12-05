@@ -15,4 +15,8 @@ public protocol ThemeProtocol {
     /* TableView背景颜色*/
     var tableViewBackgroundColor: UIColor { get }    
     
+    // MARK: 导航栏
+    var navigationBarTextColor: UIColor { get set }
+    var NavigationBarTintColor: UIColor { get set }
+    var NavigationBarBarTintColor: UIColor { get set }
 }

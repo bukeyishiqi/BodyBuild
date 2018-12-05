@@ -41,7 +41,6 @@ extension UIViewController {
     
     @objc open func oy_viewDidLoad(){
         self.oy_viewDidLoad()
-        
         // 统一配置主题,赋值主题配置Block
         ThemeService.share.configControllerStyle(self)
     }

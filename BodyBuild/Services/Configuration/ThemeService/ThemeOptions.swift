@@ -10,12 +10,14 @@ import Foundation
 
 
 public struct ThemeOptions: ThemeProtocol {
-    public var viewBackgroundColor: UIColor {
-        return UIColor.white
-    }
     
-    public var tableViewBackgroundColor: UIColor {
-        return UIColor.white
-    }
+    public var viewBackgroundColor: UIColor = UIColor.white
     
+    public var tableViewBackgroundColor = UIColor.white
+    
+    public var navigationBarTextColor: UIColor = UIColor.colorFromHexString(hex: "3b3a3a")
+    
+    public var NavigationBarTintColor: UIColor = UIColor.colorFromHexString(hex: "3b3a3a")
+    
+    public var NavigationBarBarTintColor: UIColor = UIColor.colorFromHexString(hex: "f9f9f9")
 }

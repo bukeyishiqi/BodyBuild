@@ -9,6 +9,7 @@
 import Foundation
 
 public class OYUtils {
+    
         /** MD5加密*/
     class func md5String(str:String) -> String{
         let cStr = (str as NSString).utf8String

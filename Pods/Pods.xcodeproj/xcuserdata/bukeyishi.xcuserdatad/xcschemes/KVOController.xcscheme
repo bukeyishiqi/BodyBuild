@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "55595040218871B51605CD21653B9C7E"
-               BlueprintName = "SwiftyJSON"
+               BlueprintIdentifier = "F1BB2FCBCF83B5DDB315512A21BC40B8"
+               BlueprintName = "KVOController"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SwiftyJSON.framework">
+               BuildableName = "KVOController.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

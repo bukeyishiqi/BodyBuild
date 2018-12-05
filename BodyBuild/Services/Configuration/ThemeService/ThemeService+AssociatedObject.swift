@@ -14,7 +14,7 @@ extension UIViewController {
     /**
      * 主题配置执行Block
      */
-    typealias ThemeChangeHandler = ((_ options: ThemeOptions) -> Void)?
+    typealias ThemeChangeHandler = ((_ options: ThemeProtocol) -> Void)?
     
     
     private struct cs_associatedKeys {
@@ -25,17 +25,18 @@ extension UIViewController {
     // MARK: 主题
     var themChangeHandler: ThemeChangeHandler {
         set {
-//            objc_setAssociatedObject(self, cs_associatedKeys.theme!, newValue as AnyObject, .OBJC_ASSOCIATION_COPY_NONATOMIC)
-            guard let value = newValue else{
-                return
-            }
-            let dealObject: AnyObject = unsafeBitCast(value, to: AnyObject.self)
-            objc_setAssociatedObject(self, cs_associatedKeys.theme!,dealObject,objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+//            guard let value = newValue else{
+//                return
+//            }
+            objc_setAssociatedObject(self, cs_associatedKeys.theme!, newValue as AnyObject, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+
+//            let dealObject: AnyObject = unsafeBitCast(value, to: AnyObject.self)
+//            objc_setAssociatedObject(self, cs_associatedKeys.theme!,dealObject,objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             //设置KVO监听
-//            self.observe(ThemeService.share, keyPath: "configType", options: [.initial,.new] , block: { (nav, color, change) -> Void in
-//
-//                }
-//            )
+            self.kvoController.observe(ThemeService.share, keyPath: "styleDescription", options: [.initial,.new] , block: {[weak self] (nav, obj, change) -> Void in
+                    self?.themChangeHandler?(ThemeService.share.themeOptions)
+                }
+            )
         }
         get {
             if let themeHandler = objc_getAssociatedObject(self, cs_associatedKeys.theme!) as? ThemeChangeHandler {

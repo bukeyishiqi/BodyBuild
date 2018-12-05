@@ -23,6 +23,7 @@ pod 'MJRefresh'
 pod 'MBProgressHUD'
 pod 'DZNEmptyDataSet'
 pod 'IQKeyboardManager'
+pod 'KVOController'
 
 #Umeng
 pod 'UMCCommon'

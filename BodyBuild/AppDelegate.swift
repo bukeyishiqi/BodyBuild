@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = MainRouter.createModule()
 //        self.window?.makeKeyAndVisible()
         
-        ThemeService.share.setThemeConfigType(type: ThemeConfigType.default(options: ThemeOptions()))
+        ThemeService.share.setThemeConfigType(type: .default)
         
         return true
     }
