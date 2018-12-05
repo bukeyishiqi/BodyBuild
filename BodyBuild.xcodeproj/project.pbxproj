@@ -24,6 +24,8 @@
 		65A138462195E9A300968D70 /* SettiingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A1383A2195E9A200968D70 /* SettiingProtocols.swift */; };
 		65A138472195E9A300968D70 /* SettiingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A1383B2195E9A200968D70 /* SettiingViewController.swift */; };
 		65A138482195E9A300968D70 /* SettiingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A1383C2195E9A200968D70 /* SettiingPresenter.swift */; };
+		65F413BC21B8187900E81B02 /* WRNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F413BA21B8187900E81B02 /* WRNavigationBar.swift */; };
+		65F413BD21B8187900E81B02 /* WRCustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F413BB21B8187900E81B02 /* WRCustomNavigationBar.swift */; };
 		8C0A95F32195878600E9BCC0 /* ZJPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A95EF2195878600E9BCC0 /* ZJPageTitleView.swift */; };
 		8C0A95F42195878600E9BCC0 /* ZJPageOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A95F02195878600E9BCC0 /* ZJPageOptions.swift */; };
 		8C0A95F52195878600E9BCC0 /* ZJBasePageControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A95F12195878600E9BCC0 /* ZJBasePageControlCell.swift */; };
@@ -113,6 +115,8 @@
 		65A1383A2195E9A200968D70 /* SettiingProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettiingProtocols.swift; sourceTree = "<group>"; };
 		65A1383B2195E9A200968D70 /* SettiingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettiingViewController.swift; sourceTree = "<group>"; };
 		65A1383C2195E9A200968D70 /* SettiingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettiingPresenter.swift; sourceTree = "<group>"; };
+		65F413BA21B8187900E81B02 /* WRNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRNavigationBar.swift; sourceTree = "<group>"; };
+		65F413BB21B8187900E81B02 /* WRCustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCustomNavigationBar.swift; sourceTree = "<group>"; };
 		66E33F9AF3BC90A948B14AFB /* Pods-BodyBuild.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BodyBuild.release.xcconfig"; path = "Pods/Target Support Files/Pods-BodyBuild/Pods-BodyBuild.release.xcconfig"; sourceTree = "<group>"; };
 		8C0A95EF2195878600E9BCC0 /* ZJPageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJPageTitleView.swift; sourceTree = "<group>"; };
 		8C0A95F02195878600E9BCC0 /* ZJPageOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZJPageOptions.swift; sourceTree = "<group>"; };
@@ -261,6 +265,15 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
+		65F413B921B8187900E81B02 /* WRNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				65F413BA21B8187900E81B02 /* WRNavigationBar.swift */,
+				65F413BB21B8187900E81B02 /* WRCustomNavigationBar.swift */,
+			);
+			path = WRNavigationBar;
+			sourceTree = "<group>";
+		};
 		8C0A95ED2195878600E9BCC0 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,7 +298,6 @@
 			children = (
 				8C0EFCB9218C4137001B470F /* BodyBuild */,
 				8C0EFCB8218C4137001B470F /* Products */,
-				8CEE66302192DAF900E94945 /* Vendor */,
 				8E4B9EE1D010018E1923704C /* Pods */,
 				054071A35DB768D3D9B04B17 /* Frameworks */,
 			);
@@ -307,6 +319,7 @@
 				8CFAAAB1219027A5001B7AFD /* Modules */,
 				8CEE663A2192DAF900E94945 /* Utility */,
 				8C0A95ED2195878600E9BCC0 /* CustomViews */,
+				8CEE66302192DAF900E94945 /* Vendor */,
 				8C0EFCBA218C4137001B470F /* AppDelegate.swift */,
 				8C0EFCBE218C4137001B470F /* Main.storyboard */,
 				8C0EFCC1218C4138001B470F /* Assets.xcassets */,
@@ -473,6 +486,7 @@
 		8CEE66302192DAF900E94945 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				65F413B921B8187900E81B02 /* WRNavigationBar */,
 				8CEE66312192DAF900E94945 /* OptiTableView */,
 			);
 			path = Vendor;
@@ -722,6 +736,7 @@
 				8C1FEDA22193ED6300F23F9D /* OYUtils+File.swift in Sources */,
 				8CCA663D21AF8ED600D069FF /* OYUtils+ImageView.swift in Sources */,
 				8CFAAAC721904AA3001B7AFD /* MainRouter.swift in Sources */,
+				65F413BC21B8187900E81B02 /* WRNavigationBar.swift in Sources */,
 				8CFAAAC921904AA3001B7AFD /* MainProtocols.swift in Sources */,
 				8C0EFCE4218C4E2C001B470F /* RequestService.swift in Sources */,
 				8CEE663E2192DAF900E94945 /* RowModelType.swift in Sources */,
@@ -775,6 +790,7 @@
 				65A138482195E9A300968D70 /* SettiingPresenter.swift in Sources */,
 				8C0A95F42195878600E9BCC0 /* ZJPageOptions.swift in Sources */,
 				8CEE662A2192D4BA00E94945 /* ConversationListProtocols.swift in Sources */,
+				65F413BD21B8187900E81B02 /* WRCustomNavigationBar.swift in Sources */,
 				8C1FEDBB2194371F00F23F9D /* IndexRouter.swift in Sources */,
 				8C1FEDA42193ED6300F23F9D /* OYUtils+Device.swift in Sources */,
 				8CEE662B2192D4BA00E94945 /* ConversationListInteractor.swift in Sources */,

@@ -12,17 +12,32 @@ import UIKit
 import SBCycleScrollView
 import SnapKit
 
+
+private let NAVBAR_COLORCHANGE_POINT:CGFloat = -80
+private let IMAGE_HEIGHT:CGFloat = OYUtils.Adapt(214)
+private let SCROLL_DOWN_LIMIT:CGFloat = 50
+private let LIMIT_OFFSET_Y:CGFloat = -(IMAGE_HEIGHT + SCROLL_DOWN_LIMIT)
+
+
 class IndexViewController: UIViewController, IndexViewProtocol {
 
     // 标题数组
     private lazy var titles : [String] = ["教练列表","最新活动","健康知识","健康产品"]
 
-	var presenter: IndexPresenterProtocol?
+    var presenter: IndexPresenterProtocol?
+    
+    private lazy var tableView: UITableView = {
+       let tableView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenW, height: kScreenH), style: .plain)
+        tableView.contentInset = UIEdgeInsets.init(top: IMAGE_HEIGHT-CGFloat(WRNavigationBar.navBarBottom()), left: 0, bottom: 0, right: 0) 
+        tableView.delegate = self
+
+        return tableView
+    }()
     
     // 轮播图
     private lazy var cycleScrollView: CycleScrollView = {
         var option = CycleOptions()
-        let cycleView = CycleScrollView.initScrollView(frame: CGRect.init(x: 0, y: 0, width: kScreenW, height: OYUtils.Adapt(214)), delegate: self, placehoder: UIImage.init(named: ""), cycleOptions: option)
+        let cycleView = CycleScrollView.initScrollView(frame: CGRect.init(x: 0, y: -IMAGE_HEIGHT, width: kScreenW, height: IMAGE_HEIGHT), delegate: self, placehoder: UIImage.init(named: ""), cycleOptions: option)
         cycleView.imageNamesGroup = ["liveImage","liveImage","liveImage"]
         return cycleView
     }()
@@ -50,19 +65,62 @@ class IndexViewController: UIViewController, IndexViewProtocol {
         return pageTitleViw
         }()
     
-	override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         setUpAllView()
+//        if #available(iOS 11.0, *) {
+//            self.tableView.contentInsetAdjustmentBehavior = .never
+//        } else {
+//            self.automaticallyAdjustsScrollViewInsets = false
+//        }
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        navBarBarTintColor = UIColor.white
+        navBarBackgroundAlpha = 0
+        navBarTintColor = .white
+        navBarTitleColor = .white
         self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
     }
 }
 
+// MARK: - ScrollViewDidScroll
+extension IndexViewController
+{
+    func scrollViewDidScroll(_ scrollView: UIScrollView)
+    {
+        let offsetY = scrollView.contentOffset.y
+        
+        if (offsetY > NAVBAR_COLORCHANGE_POINT)
+        {
+            let alpha = (offsetY - NAVBAR_COLORCHANGE_POINT) / CGFloat(WRNavigationBar.navBarBottom())
+            navBarBackgroundAlpha = alpha
+            navBarTitleColor = .black
+        }
+        else
+        {
+            navBarBackgroundAlpha = 0
+            navBarTitleColor = .white
+        }
+        
+        // 限制下拉距离
+        if (offsetY < LIMIT_OFFSET_Y) {
+            scrollView.contentOffset = CGPoint.init(x: 0, y: LIMIT_OFFSET_Y)
+        }
+        
+        // 改变图片框的大小 (上滑的时候不改变)
+        // 这里不能使用offsetY，因为当（offsetY < LIMIT_OFFSET_Y）的时候，y = LIMIT_OFFSET_Y 不等于 offsetY
+        let newOffsetY = scrollView.contentOffset.y
+        if (newOffsetY < -IMAGE_HEIGHT)
+        {
+            cycleScrollView.frame = CGRect(x: 0, y: newOffsetY, width: kScreenW, height: -newOffsetY)
+        }
+    }
+}
+
+extension IndexViewController: UITableViewDelegate {}
 
 // MARK: CycleScrollViewDelegate
 
@@ -84,22 +142,32 @@ extension IndexViewController: PageTitleViewDelegate {
 
 extension IndexViewController {
     func setUpAllView() {
-        view.addSubview(cycleScrollView)
-
-        view.addSubview(locationView)
+        view.addSubview(tableView)
+        
+        let headerView = UIView.init(frame: self.view.bounds)
+        tableView.tableHeaderView = headerView
+        
+        headerView.addSubview(cycleScrollView)
+        cycleScrollView.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(-IMAGE_HEIGHT)
+            $0.left.equalToSuperview()
+            $0.right.equalToSuperview()
+            $0.height.equalTo(IMAGE_HEIGHT)
+        }
+        
+        headerView.addSubview(locationView)
         locationView.snp.makeConstraints {
             $0.top.equalTo(cycleScrollView.snp.bottom)
-            $0.left.equalTo(view.snp.left)
-            $0.right.equalTo(view.snp.right)
+            $0.left.equalToSuperview()
+            $0.right.equalToSuperview()
             $0.height.equalTo(80)
         }
         
-        view.addSubview(pageTitleView)
+        headerView.addSubview(pageTitleView)
         pageTitleView.snp.makeConstraints {
-            $0.top.equalTo(locationView.snp.bottom)
-            $0.topMargin.equalTo(10)
-            $0.left.equalTo(view.snp.left)
-            $0.right.equalTo(view.snp.right)
+            $0.top.equalTo(locationView.snp.bottom).offset(10)
+            $0.left.equalToSuperview()
+            $0.right.equalToSuperview()
             $0.height.equalTo(50)
         }
     }
